@@ -1,0 +1,142 @@
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');   
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cinzel', serif;
+        }
+        
+        body {
+            background-color: #0a0a0a;
+            color: #e0d6b5;
+            background-image: url('https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=1000');
+            background-size: cover;
+            background-attachment: fixed;
+            transition: all 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes fadeOut {
+            from { opacity: 1; }
+            to { opacity: 0; }
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            animation: fadeIn 1s ease-in;
+        }
+        header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 1px solid #3a2e26;
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 3rem;
+            color: #c9a769;
+            text-shadow: 0 0 10px rgba(201, 167, 105, 0.5);
+            margin-bottom: 10px;
+              font-family: "Great Vibes", cursive;
+        }
+        .subtitle {
+            font-style: italic;
+            font-size: 1.2rem;
+        }
+        .kingdom-map {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 20px;
+            height: 600px;
+            margin: 40px 0;
+            position: relative;
+        }
+        .kingdom {
+            border: 2px solid #3a2e26;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: rgba(10, 10, 10, 0.8);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .kingdom:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(201, 167, 105, 0.5);
+            border-color: #c9a769;
+        }
+        .kingdom::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(201, 167, 105, 0.1) 0%, rgba(10, 10, 10, 0.8) 100%);
+            z-index: -1;
+        }
+                .kingdom h2 {
+            color: #c9a769;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+             font-family: "Pattaya", sans-serif;
+        }
+        
+        .kingdom p {
+            margin-bottom: 20px;
+        }
+                .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3a2e26;
+            color: #e0d6b5;
+            border: 1px solid #c9a769;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: #c9a769;
+            color: #0a0a0a;
+            animation: pulse 1s infinite;
+        }
+        p{
+           font-family: "Balsamiq Sans", sans-serif;
+        }
+        .scene a{
+          text-decoration:none;
+          border:3px solid #e0d6b5;
+          display:flex;
+          color:white;
+          padding:10px;
+          background-color:rgba(10, 10, 10, 0.8);
+}
+  
+.scene{
+  margin-top:200px;
+}
+.scene a:hover{
+  background-color:#c9a769;
+}
+    
+        .fade-out {
+            animation: fadeOut 0.5s forwards;
+        }
